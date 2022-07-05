@@ -9,4 +9,14 @@ class HelloWorld extends React.Component {
   }
 }
 
-root.render(<HelloWorld />);
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <HelloWorld />
+      </div>
+    );
+  }
+}
+
+root.render(<App />);
