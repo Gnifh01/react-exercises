@@ -6,9 +6,14 @@ class Welcome extends React.Component {
   }
 }
 
+//YES, I CAN SET DEFAULT VALUE IN PROPS WITH THIS METHOD :
+
+Welcome.defaultProps = {
+  name: "Gabbo",
+};
+
 export default class App extends React.Component {
   render() {
-    return <Welcome name="Gabbo" />
+    return <Welcome />;
   }
 }
-
