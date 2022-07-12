@@ -1,4 +1,5 @@
 import React from "react";
+import Age from "./Age";
 
 class Welcome extends React.Component {
   constructor(props) {
@@ -6,11 +7,11 @@ class Welcome extends React.Component {
     this.props = props;
   }
   render() {
-    const { name, age } = this.props;
+    const { name } = this.props;
     return (
       <React.StrictMode>
         <p>Welcome {name}!</p>
-        <p>Your age is {age}</p>
+        <Age age={20} />
       </React.StrictMode>
     );
   }
@@ -23,6 +24,6 @@ Welcome.defaultProps = {
 
 export default class App extends React.Component {
   render() {
-    return <Welcome name={<strong>Manuel</strong>} age={20} />;
+    return <Welcome name={<strong>Manuel</strong>}/>;
   }
 }
