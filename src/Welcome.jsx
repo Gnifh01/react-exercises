@@ -11,7 +11,7 @@ export default class Welcome extends React.Component {
     return (
       <React.StrictMode>
         <p>Welcome {name}!</p>
-        <Age age={10}/>
+        <Age age={30}/>
       </React.StrictMode>
     );
   }
