@@ -2,11 +2,11 @@ import React from "react";
 
 class Welcome extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.props = props;
   }
   render() {
-    const {name, age} = this.props;
+    const { name, age } = this.props;
     return (
       <React.StrictMode>
         <p>Welcome {name}!</p>
@@ -23,6 +23,6 @@ Welcome.defaultProps = {
 
 export default class App extends React.Component {
   render() {
-    return <Welcome age={20} />;
+    return <Welcome name={<strong>Manuel</strong>} age={20} />;
   }
 }
