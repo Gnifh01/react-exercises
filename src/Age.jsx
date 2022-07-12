@@ -1,6 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
 
-export default function Age(props) {
-    const { age } = props;
-  return <p>Your age is {age}</p>;
+export default class Age extends Component {
+  render() {
+    return (
+      <React.StrictMode>
+        {this.props.age >= 18 && <p>Your age is {this.props.age}</p>}
+      </React.StrictMode>
+    );
+  }
 }
+
+Age.defaultProps = {
+  age: "20",
+};
