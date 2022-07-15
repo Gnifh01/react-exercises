@@ -8,15 +8,23 @@ export default class Counter extends Component {
   constructor(props) {
     super(props);
     setInterval(() => {
-      this.setState((state) => {
+      this.setState((oldState) => {
         return {
-          count: state.count + this.props.increment,
+          count: oldState.count + this.props.increment,
         };
       });
     }, this.props.interval);
   }
 
   render() {
-    return <h1>Count: {this.state.count}</h1>;
+    return <CounterDisplay count={this.state.count}/>;
+  }
+}
+
+class CounterDisplay extends Component {
+  render() {
+    return (
+      <h1>Counter: {this.props.count}</h1>
+    )
   }
 }
