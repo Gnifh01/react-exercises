@@ -1,8 +1,8 @@
 import React from "react";
-import ClickCounter from "./ClickCounter";
+import ClickTracker from "./ClickTracker";
 
 export default class App extends React.Component {
   render() {
-    return <ClickCounter initialCount={0} increment={1}/>;
+    return <ClickTracker />;
   }
 }
