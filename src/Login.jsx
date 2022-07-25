@@ -11,7 +11,7 @@ export default class Login extends Component {
     const { name, value, type, checked } = event.target;
 
     this.setState({
-        [name]: type === "checkbox" ? checked : value,
+      [name]: type === "checkbox" ? checked : value,
     });
   };
 
@@ -22,7 +22,7 @@ export default class Login extends Component {
   render() {
     return (
       <div>
-        <label htmlFor="">Username</label>
+        <label>Username</label>
         <br />
         <input
           type="text"
@@ -30,8 +30,9 @@ export default class Login extends Component {
           value={this.state.username}
           onChange={this.hendleInput}
         />
-        <br /><br />
-        <label htmlFor="">Password</label>
+        <br />
+        <br />
+        <label>Password</label>
         <br />
         <input
           type="password"
@@ -39,14 +40,15 @@ export default class Login extends Component {
           value={this.state.password}
           onChange={this.hendleInput}
         />
-        <br /><br />
+        <br />
+        <br />
         <input
           type="checkbox"
           name="remember"
           checked={this.state.remember}
           onChange={this.hendleInput}
         />
-        <label htmlFor="">Remember</label>
+        <label>Remember</label>
       </div>
     );
   }
