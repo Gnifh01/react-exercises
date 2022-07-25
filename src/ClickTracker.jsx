@@ -19,21 +19,21 @@ export default class ClickTracker extends Component {
         <button
           name="Button 1"
           onClick={this.hendleClick}
-          style={{ padding: "15px", backgroundColor: "#0e3eff", color: "#fff" }}
+          style={{ padding: "15px", backgroundColor: "#0e3eff", color: "#fff", margin: "10px" }}
         >
           Button 1
         </button>
         <button
         name="Button 2"
           onClick={this.hendleClick}
-          style={{ padding: "15px", backgroundColor: "#df2e34", color: "#fff" }}
+          style={{ padding: "15px", backgroundColor: "#df2e34", color: "#fff", margin: "10px" }}
         >
           Button 2
         </button>
         <button
         name="Button 3"
           onClick={this.hendleClick}
-          style={{ padding: "15px", backgroundColor: "#0ba240", color: "#fff" }}
+          style={{ padding: "15px", backgroundColor: "#0ba240", color: "#fff", margin: "10px" }}
         >
           Button 3
         </button>
