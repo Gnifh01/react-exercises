@@ -18,7 +18,7 @@ export default class UncontrolledLogin extends Component {
         <form onSubmit={hendleFormSubmit}>
           <label>Username</label>
           <br />
-          <input type="text" name="username"/>
+          <input type="text" name="username"  autoFocus={true}/>
           <br />
           <br />
           <label>Password</label>
