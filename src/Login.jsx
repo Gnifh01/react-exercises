@@ -19,6 +19,14 @@ export default class Login extends Component {
     console.log(this.state);
   };
 
+  resetAll = () => {
+    this.setState({
+      username: "",
+      password: "",
+      remember: false,
+    });
+  };
+
   render() {
     return (
       <div>
@@ -54,6 +62,9 @@ export default class Login extends Component {
         <div>
           {this.state.username && this.state.password ? (
             <button onClick={this.onLogin}>Login</button>
+          ) : null}
+          {this.state.username && this.state.password ? (
+            <button onClick={this.resetAll}>Reset</button>
           ) : null}
         </div>
       </div>
