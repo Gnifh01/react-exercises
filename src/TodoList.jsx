@@ -17,6 +17,7 @@ export default class TodoList extends Component {
   addTodo = () => {
     this.setState({
       data: [...data, { todo: this.state.inputTodo }],
+      inputTodo: ""
     });
   };
 
@@ -24,7 +25,7 @@ export default class TodoList extends Component {
     return (
       <>
         <h1>Todo List</h1>
-        <input type="text" onChange={this.saveTodo} />
+        <input type="text" onChange={this.saveTodo} value={this.state.inputTodo}/>
         <button onClick={this.addTodo}>Add</button>
         <ul>
           {this.state.data.map((item, key) => {
